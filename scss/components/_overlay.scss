@@ -1,0 +1,12 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  visibility: hidden;
+
+  background: linear-gradient(0deg, $blue-lilac-color, $blue-lilac-color);
+}

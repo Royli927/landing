@@ -1,0 +1,16 @@
+.card {
+  @include flex();
+
+  align-items: center;
+  margin: 0 auto;
+
+  &__description {
+    @include flex(space-between, column);
+
+    width: 50%;
+
+    @include media-quiries(phone) {
+      width: auto;
+    }
+  }
+}

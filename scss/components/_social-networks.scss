@@ -1,0 +1,10 @@
+.social-networks {
+  @include flex();
+
+  &__icon {
+    @include media-quiries(phone) {
+      height:80%;
+      width: 80%;
+    }
+  }
+}

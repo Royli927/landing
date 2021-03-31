@@ -1,0 +1,41 @@
+.collage-box {
+  @include flex(flex-start);
+
+  flex-wrap: wrap;
+
+  &__item {
+    position: relative;
+    flex-basis: 25%;
+
+    &:hover .collage-box__item-icon,
+    &:hover .overlay {
+      visibility: visible;
+    }
+
+    @include media-quiries(phone) {
+      width: 50%;
+      height: 20rem;
+    }
+  }
+
+  &__item-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__item-icon {
+    @include absolute-center();
+
+    visibility: hidden;
+
+    @include media-quiries(phone) {
+      height: 30%;
+      width: 30%;
+    }
+  }
+
+  @include media-quiries(phone) {
+    max-height: 81rem;
+    flex-direction: column;
+  }
+}

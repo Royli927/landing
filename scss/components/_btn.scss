@@ -1,0 +1,13 @@
+.btn {
+  @include text($white-color);
+
+  padding: 2rem 3rem;
+
+  text-transform: uppercase;
+
+  background-color: $darken-blue-color;
+
+  &:hover {
+    background-color: $blue-lilac-color;
+  }
+}

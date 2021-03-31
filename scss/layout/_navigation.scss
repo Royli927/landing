@@ -1,0 +1,22 @@
+.navigation {
+  &__pages-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__page-link {
+    @include text($black-color);
+
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: $font-weight-medium;
+
+      color: $darken-blue-color;
+    }
+  }
+
+  @include media-quiries(phone) {
+    display: none;
+  }
+}

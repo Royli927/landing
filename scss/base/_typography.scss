@@ -1,0 +1,26 @@
+.title {
+  font-family: $font-family;
+  font-weight: $title-font-weight;
+  font-style: $font-style;
+
+  color: $black-color;
+
+  &_size_lg {
+    font-size: $lg-title-font-size;
+    line-height: $lg-title-line-height;
+  }
+
+  &_size_md {
+    font-size: $md-title-font-size;
+    line-height: $md-title-line-height;
+  }
+
+  &_size_sm {
+    font-size: $sm-title-font-size;
+    line-height: $sm-title-line-height;
+  }
+}
+
+.paragraph {
+  @include text($gray-color);
+}

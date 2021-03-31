@@ -1,0 +1,49 @@
+.header {
+  height: 100vh;
+  padding-top: 5.5rem;
+  padding-bottom: 14.6rem;
+
+  background-color: $smoky-white-color;
+
+  &__top-bar {
+    @include flex();
+  }
+
+  &__navigation {
+    width: 53%;
+  }
+
+  &__main-content {
+    padding-top: 14rem;
+  }
+
+  &__card {
+    padding-left: 7rem;
+
+    @include media-quiries(phone) {
+      flex-direction: column;
+      padding-left: 0;
+    }
+  }
+
+  &__card-btn {
+    width: 22.5rem;
+
+    @include media-quiries(phone) {
+      margin: 0 auto;
+    }
+  }
+
+  &__card-img {
+    @include media-quiries(phone) {
+
+      margin-bottom: 6rem;
+    }
+  }
+
+  @include media-quiries(phone) {
+    height: auto;
+
+    text-align: center;
+  }
+}

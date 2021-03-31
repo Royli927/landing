@@ -1,0 +1,30 @@
+@mixin text($color) {
+  font-family: $font-family;
+  font-weight: $paragraph-font-weight;
+  font-size: $paragraph-font-size;
+  font-style: $font-style;
+  line-height: $paragraph-line-height;
+
+  color: $color;
+}
+
+@mixin flex($content: space-between, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+}
+
+@mixin absolute-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin media-quiries($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $mobile-breakpoint) {
+      @content
+    }
+  }
+}
