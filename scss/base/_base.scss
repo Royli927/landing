@@ -12,7 +12,7 @@
 html {
   font-size: 62.5%;
 
-  @include media-quiries(phone) {
+  @include media-query(phone) {
     font-size: 40%;
   }
 }
@@ -36,7 +36,7 @@ header,
 footer {
   padding: 0 $padding-width;
 
-  @include media-quiries(phone) {
+  @include media-query(phone) {
     padding: 0 9%;
   }
 }

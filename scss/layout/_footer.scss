@@ -7,7 +7,7 @@
   &__content-box {
     @include flex();
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       flex-direction: column;
 
       text-align: center;
@@ -15,7 +15,7 @@
   }
 
   &__author-info {
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       margin-bottom: 3.8rem;
     }
   }
@@ -23,7 +23,7 @@
   &__social-networks {
     width: 17.5rem;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       width: 24rem;
     }
   }

@@ -20,7 +20,7 @@
   &__card {
     padding-left: 7rem;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       flex-direction: column;
       padding-left: 0;
     }
@@ -29,19 +29,19 @@
   &__card-btn {
     width: 22.5rem;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       margin: 0 auto;
     }
   }
 
   &__card-img {
-    @include media-quiries(phone) {
+    @include media-query(phone) {
 
       margin-bottom: 6rem;
     }
   }
 
-  @include media-quiries(phone) {
+  @include media-query(phone) {
     height: auto;
 
     text-align: center;

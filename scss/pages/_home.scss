@@ -24,7 +24,7 @@
     &__card-item {
       width: 12rem;
 
-      @include media-quiries(phone) {
+      @include media-query(phone) {
         flex-basis: 50%;
         justify-content: center;
 
@@ -40,7 +40,7 @@
     }
 
     &__card-item-description {
-      @include media-quiries(phone) {
+      @include media-query(phone) {
         margin-left: 2rem;
       }
     }
@@ -54,19 +54,19 @@
   &__card {
     flex-direction: row-reverse;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       flex-direction: column;
     }
   }
 
   &__card-img {
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       margin-bottom: 9.8rem;
     }
   }
 
   &__card-title {
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       text-align: center;
     }
   }
@@ -74,7 +74,7 @@
   &__card-description {
     width: 35%;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       width: 100%;
     }
   }
@@ -144,7 +144,7 @@
   &__card-description {
     width: 54rem;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       width: auto;
     }
   }
@@ -152,12 +152,12 @@
   &__form-user-data {
     @include flex();
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       flex-direction: column;
     }
 
     > .section-feedback__form-group {
-      @include media-quiries(phone) {
+      @include media-query(phone) {
         &:not(:last-child) {
           margin-bottom: 5rem;
         }
@@ -168,7 +168,7 @@
   &__form-input {
     width: 25rem;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       width: 100%;
     }
   }

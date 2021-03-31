@@ -12,7 +12,7 @@
       visibility: visible;
     }
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       width: 50%;
       height: 20rem;
     }
@@ -28,13 +28,13 @@
 
     visibility: hidden;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       height: 30%;
       width: 30%;
     }
   }
 
-  @include media-quiries(phone) {
+  @include media-query(phone) {
     max-height: 81rem;
     flex-direction: column;
   }

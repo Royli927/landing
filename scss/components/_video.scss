@@ -15,13 +15,13 @@
 
     visibility: hidden;
 
-    @include media-quiries(phone) {
+    @include media-query(phone) {
       height: 50%;
       width: 50%;
     }
   }
 
-  @include media-quiries(phone) {
+  @include media-query(phone) {
     height: auto;
   }
 }

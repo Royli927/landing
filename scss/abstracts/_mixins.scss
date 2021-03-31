@@ -21,7 +21,7 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin media-quiries($breakpoint) {
+@mixin media-query($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: $mobile-breakpoint) {
       @content

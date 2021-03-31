@@ -16,7 +16,7 @@
     }
   }
 
-  @include media-quiries(phone) {
+  @include media-query(phone) {
     display: none;
   }
 }
