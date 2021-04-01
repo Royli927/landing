@@ -44,7 +44,7 @@
                     </picture>
                     <div class="card__description header__card-description">
                         <h1 class="title title_size_lg margin-bottom-lg header__card-title">Дизайн и верстка</h1>
-                        <p class="paragraph margin-bottom-md header__card-paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        <p class="paragraph margin-bottom-lg header__card-paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                             Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                         </p>
                         <button class="btn header__card-btn">Написать мне</button>
@@ -127,22 +127,22 @@
                     </picture>
                     <div class="card__description section-skills__card-description">
                         <h2 class="title title_size_md margin-bottom-md section-skills__card-title">Мои навыки</h2>
-                        <div class="section-skills__card-skill margin-bottom-sm">
-                            <p class="paragraph margin-bottom-sm">Adobe Photoshop</p>
+                        <div class="section-skills__card-skill">
+                            <p class="paragraph section-skills__card-paragraph">Adobe Photoshop</p>
                             <div class="skill-bar section-skills__card-skill-bar">
-                                <hr class="skill-bar__progress skill-bar__progress_percent_75">
-                            </div>
-                        </div>
-                        <div class="section-skills__card-skill margin-bottom-sm">
-                            <p class="paragraph margin-bottom-sm">Adobe Photoshop</p>
-                            <div class="skill-bar section-skills__card-skill-bar">
-                                <hr class="skill-bar__progress skill-bar__progress_percent_75">
+                                <hr class="skill-bar__progress skill-bar__progress_percent_75 section-skills__card-skill-progress">
                             </div>
                         </div>
                         <div class="section-skills__card-skill">
-                            <p class="paragraph margin-bottom-sm">Adobe Photoshop</p>
+                            <p class="paragraph section-skills__card-paragraph">Adobe Photoshop</p>
                             <div class="skill-bar section-skills__card-skill-bar">
-                                <hr class="skill-bar__progress skill-bar__progress_percent_75">
+                                <hr class="skill-bar__progress skill-bar__progress_percent_75 section-skills__card-skill-progress">
+                            </div>
+                        </div>
+                        <div class="section-skills__card-skill">
+                            <p class="paragraph section-skills__card-paragraph">Adobe Photoshop</p>
+                            <div class="skill-bar section-skills__card-skill-bar">
+                                <hr class="skill-bar__progress skill-bar__progress_percent_75 section-skills__card-skill-progress">
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
         <section class="section-work">
             <div class="container section-work__container">
                 <div class="card section-work__card text-align-center">
-                    <div class="card__description section-work__card-description margin-bottom-lg">
+                    <div class="card__description margin-bottom-lg section-work__card-description">
                         <h3 class="title title_size_md margin-bottom-md section-work__card-title">Как я работаю</h3>
                         <p class="paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                             Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
@@ -264,25 +264,27 @@
             <div class="container section-feedback__container">
                 <div class="card section-feedback__card">
                     <div class="card__description section-feedback__card-description text-align-center">
-                        <h3 class="title title_size_md margin-bottom-md section-feedback__card-title">Хотите веб-сайт?</h3>
-                        <p class="paragraph margin-bottom-lg section-feedback__card-paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                        </p>
-                        <form action="#" class="form margin-bottom-md">
-                            <div class="section-feedback__form-user-data margin-bottom-md">
+                        <div class="section-feedback__info-wrapper">
+                            <h3 class="title title_size_md margin-bottom-md section-feedback__card-title">Хотите веб-сайт?</h3>
+                            <p class="paragraph section-feedback__card-paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                            </p>
+                        </div>
+                        <form action="#" class="form margin-bottom-md section-feedback__form">
+                            <div class="section-feedback__form-user-data margin-bottom-sm">
                                 <div class="form__group section-feedback__form-group">
                                     <input type="text" class="form__input section-feedback__form-input" id="name" name="name" required>
-                                    <label for="name" class="form__label">Ваше имя</label>
+                                    <label for="name" class="form__label section-feedback__form-label">Ваше имя</label>
                                 </div>
                                 <div class="form__group section-feedback__form-group">
                                     <input type="text" class="form__input section-feedback__form-input" id="email" name="email" required>
-                                    <label for="email" class="form__label">Ваш email</label>
+                                    <label for="email" class="form__label section-feedback__form-label">Ваш email</label>
                                 </div>
                             </div>
                             <div class="section-feedback__form-user-message">
                                 <div class="form__group">
                                     <textarea class="form__textarea section-feedback__form-textarea" id="message" name="message" required></textarea>
-                                    <label for="message" class="form__label">Сообщение</label>
+                                    <label for="message" class="form__label section-feedback__form-label">Сообщение</label>
                                 </div>
                             </div>
                         </form>

@@ -17,7 +17,7 @@
       color: $darken-blue-color;
 
       @include media-query(phone) {
-        transform: translateY(-3rem);
+        transform: translateY(-3.6rem);
       }
     }
   }
@@ -31,7 +31,7 @@
     @include text($gray-concrete, $content-font-size, $content-line-height);
 
     position: absolute;
-    top: 1.2rem;
+    top: 1.7rem;
     left: 2rem;
   }
 }

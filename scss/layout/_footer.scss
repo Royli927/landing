@@ -7,7 +7,7 @@
     width: 112.5rem;
 
     @include media-query(phone) {
-      width: 19.3rem;
+      width: 100%;
     }
   }
 
@@ -15,7 +15,9 @@
     @include flex();
 
     @include media-query(phone) {
+      width: 19.3rem;
       flex-direction: column;
+      margin: 0 auto;
 
       text-align: center;
     }
@@ -23,11 +25,12 @@
 
   &__author-info {
     @include media-query(phone) {
-      margin-bottom: 3.8rem;
+      margin-bottom: 3.859rem;
     }
   }
 
   &__social-networks {
+    height: 4rem;
     width: 17.5rem;
   }
 
