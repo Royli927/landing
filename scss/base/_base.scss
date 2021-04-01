@@ -9,12 +9,12 @@
   list-style-type: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
-
-  @include media-query(phone) {
-    font-size: 40%;
-  }
 }
 
 body {
@@ -31,7 +31,7 @@ button {
   cursor: pointer;
 }
 
-section,
+/*section,
 header,
 footer {
   padding: 0 $padding-width;
@@ -39,4 +39,4 @@ footer {
   @include media-query(phone) {
     padding: 0 9%;
   }
-}
+}*/

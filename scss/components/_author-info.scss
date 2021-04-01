@@ -1,4 +1,9 @@
 .author-info {
+  &__copyright {
+    font-size: $mark-font-size;
+    line-height: $mark-line-height;
+  }
+
   &__name,
   &__copyright {
     color: $white-color;

@@ -1,9 +1,9 @@
-@mixin text($color) {
+@mixin text($color, $font-size: $paragraph-font-size, $line-height: $paragraph-line-height) {
   font-family: $font-family;
   font-weight: $paragraph-font-weight;
-  font-size: $paragraph-font-size;
+  font-size: $font-size;
   font-style: $font-style;
-  line-height: $paragraph-line-height;
+  line-height: $line-height;
 
   color: $color;
 }
@@ -21,10 +21,28 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin container($width) {
+  width: $width;
+  margin: 0 auto;
+}
+
 @mixin media-query($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: $mobile-breakpoint) {
       @content
     }
   }
+}
+
+@mixin overlay() {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  visibility: hidden;
+
+  background: linear-gradient(0deg, $blue-lilac-color, $blue-lilac-color);
 }

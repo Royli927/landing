@@ -8,6 +8,11 @@
   &_size_lg {
     font-size: $lg-title-font-size;
     line-height: $lg-title-line-height;
+
+    @include media-query(phone) {
+      font-size: $phone-lg-title-font-size;
+      line-height: $phone-lg-title-line-height;
+    }
   }
 
   &_size_md {
@@ -23,4 +28,8 @@
 
 .paragraph {
   @include text($gray-color);
+
+  @include media-query(phone) {
+    line-height: $phone-paragraph-line-height;
+  }
 }

@@ -6,22 +6,9 @@
     visibility: visible;
   }
 
-  &__preview {
-    width: 100%;
-  }
-
   &__icon {
     @include absolute-center();
 
     visibility: hidden;
-
-    @include media-query(phone) {
-      height: 50%;
-      width: 50%;
-    }
-  }
-
-  @include media-query(phone) {
-    height: auto;
   }
 }

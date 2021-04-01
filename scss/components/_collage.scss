@@ -1,10 +1,12 @@
 .collage-box {
   @include flex(flex-start);
 
+  flex-direction: row;
   flex-wrap: wrap;
 
   &__item {
     position: relative;
+    flex-grow: 1;
 
     &:hover .collage-box__item-icon,
     &:hover .overlay {
@@ -30,5 +32,6 @@
 
   @include media-query(phone) {
     flex-direction: column;
+    align-content: center;
   }
 }

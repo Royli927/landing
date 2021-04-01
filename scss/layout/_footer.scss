@@ -1,8 +1,15 @@
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 
   background-color: $darken-blue-color;
+
+  &__container {
+    width: 112.5rem;
+
+    @include media-query(phone) {
+      width: 19.3rem;
+    }
+  }
 
   &__content-box {
     @include flex();
@@ -22,9 +29,9 @@
 
   &__social-networks {
     width: 17.5rem;
+  }
 
-    @include media-query(phone) {
-      width: 24rem;
-    }
+  @include media-query(phone) {
+    padding-bottom: 4.759rem;
   }
 }

@@ -6,11 +6,5 @@
 
   &__description {
     @include flex(space-between, column);
-
-    width: 50%;
-
-    @include media-query(phone) {
-      width: auto;
-    }
   }
 }

@@ -1,44 +1,70 @@
 .section-about {
-  padding-top: 12rem;
-  padding-bottom: $standard-padding-height;
+  padding: 12rem 0 $standard-padding-height;
+
+  &__container {
+    width: 54rem;
+
+    @include media-query(phone) {
+      width: 32.3rem;
+    }
+  }
 
   &__card {
     justify-content: center;
   }
 
-  &__card-description {
-    width: 52rem;
+  &__card-title {
+    margin-bottom: 4.4rem;
+  }
+
+  @include media-query(phone) {
+    padding-top: 9.1rem;
+    padding-bottom: 8.2rem;
   }
 }
 
 .section-achievements {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: $standard-padding-height 0;
 
   background-color: $darken-blue-color;
 
+  &__container {
+    width: 109.1rem;
+
+    @include media-query(phone) {
+      width: 33.9rem;
+    }
+  }
+
   &__card-item {
-    width: 12rem;
+    width: 14.1rem;
 
     @include media-query(phone) {
       flex-basis: 50%;
       justify-content: center;
 
       &:not(:nth-child(-n+2)) {
-        margin-top: 9rem;
+        margin-top: 8.9rem;
       }
     }
   }
 
   @include media-query(phone) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 7.5rem;
+    padding-bottom: 7.4rem;
   }
 }
 
 .section-skills {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: $standard-padding-height 0;
+
+  &__container {
+    width: 115rem;
+
+    @include media-query(phone) {
+      width: 33.9rem;
+    }
+  }
 
   &__card {
     flex-direction: row-reverse;
@@ -56,32 +82,76 @@
 
   &__card-title {
     @include media-query(phone) {
+      margin-bottom: 4.4rem;
+
       text-align: center;
     }
   }
 
   &__card-description {
-    width: 35%;
+    width: 44.5rem;
 
     @include media-query(phone) {
-      width: 100%;
+      width: 33.9rem;
+    }
+  }
+
+  &__card-skill {
+    @include media-query(phone) {
+      margin-bottom: 2.976rem;
     }
   }
 
   &__card-skill-bar {
     height: .4rem;
   }
+
+  @include media-query(phone) {
+    padding-top: 8.2rem;
+    padding-bottom: 10.3rem;
+  }
 }
 
 .section-work {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: $standard-padding-height 0;
 
   background-color: $silver-color;
+
+  &__container {
+    width: 111rem;
+
+    @include media-query(phone) {
+      width: 33.9rem;
+    }
+  }
 
   &__card {
     flex-direction: column;
     justify-content: center;
+  }
+
+  &__card-title {
+    margin-bottom: 3.4rem;
+  }
+
+  &__card-description {
+    width: 54rem;
+
+    @include media-query(phone) {
+      width: 32.3rem;
+    }
+  }
+
+  &__video-box-icon {
+    @include media-query(phone) {
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+  }
+
+  @include media-query(phone) {
+    padding-top: 9.3rem;
+    padding-bottom: 9.1rem;
   }
 }
 
@@ -90,35 +160,53 @@
 
   &__collage-box {
     @include media-query(phone) {
-      max-height: 81rem;
+      max-height: calc(4 * 18.8rem);
     }
   }
 
   &__item {
-    flex-basis: 25%;
+    width: 46.3rem;
 
     @include media-query(phone) {
-      width: 50%;
-      height: 20rem;
+      width: 18.8rem;
+      height: 18.8rem;
+
     }
+  }
+
+  @include media-query(phone) {
+    padding: 3.4rem 0;
   }
 }
 
 .section-feedback {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: $standard-padding-height 0;
 
   background-color: $silver-color;
+
+  &__container {
+    width: 54rem;
+
+    @include media-query(phone) {
+      width: 34.2rem;
+    }
+  }
 
   &__card {
     flex-direction: column;
   }
 
-  &__card-description {
-    width: 54rem;
+  &__card-title {
+    margin-bottom: 3.4rem;
+  }
 
+  &__card-paragraph {
+    margin-bottom: 4.8rem;
+  }
+
+  &__card-description {
     @include media-query(phone) {
-      width: auto;
+      width: 34.2rem;
     }
   }
 
@@ -126,13 +214,14 @@
     @include flex();
 
     @include media-query(phone) {
+      margin-bottom: 2.2rem;
       flex-direction: column;
     }
 
     > .section-feedback__form-group {
       @include media-query(phone) {
         &:not(:last-child) {
-          margin-bottom: 5rem;
+          margin-bottom: 2.1rem;
         }
       }
     }
@@ -140,14 +229,28 @@
 
   &__form-input {
     width: 25rem;
+  }
 
+  &__form-textarea {
+    width: 54rem;
+  }
+
+  &__form-input,
+  &__form-textarea {
     @include media-query(phone) {
-      width: 100%;
+      width: 34.2rem;
     }
   }
 
   &__btn {
     width: 19rem;
     margin: 0 auto;
+
+    font-size: $content-font-size;
+    line-height: $content-line-height;
+  }
+
+  @include media-query(phone) {
+    padding: 9.1rem 0 12rem;
   }
 }
