@@ -160,7 +160,7 @@
 
   &__collage-box {
     @include media-query(phone) {
-      max-height: calc(4 * 18.8rem);
+      height: calc(4 * 18.8rem);
     }
   }
 
@@ -170,7 +170,6 @@
     @include media-query(phone) {
       width: 18.8rem;
       height: 18.8rem;
-
     }
   }
 
