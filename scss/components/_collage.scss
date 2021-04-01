@@ -5,16 +5,10 @@
 
   &__item {
     position: relative;
-    flex-basis: 25%;
 
     &:hover .collage-box__item-icon,
     &:hover .overlay {
       visibility: visible;
-    }
-
-    @include media-query(phone) {
-      width: 50%;
-      height: 20rem;
     }
   }
 
@@ -35,7 +29,6 @@
   }
 
   @include media-query(phone) {
-    max-height: 81rem;
     flex-direction: column;
   }
 }

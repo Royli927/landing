@@ -1,0 +1,32 @@
+.skill-bar {
+  background-color: $silver-color;
+
+  &__progress {
+    height: 100%;
+
+    border: none;
+
+    &_percent_25 {
+      width: 25%;
+    }
+
+    &_percent_50 {
+      width: 50%;
+    }
+
+    &_percent_75 {
+      width: 75%;
+    }
+
+    &_percent_100 {
+      width: 100%;
+    }
+
+    &_percent_25,
+    &_percent_50,
+    &_percent_75,
+    &_percent_100 {
+      background-color: $darken-blue-color;
+    }
+  }
+}

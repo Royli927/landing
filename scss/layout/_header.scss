@@ -36,7 +36,6 @@
 
   &__card-img {
     @include media-query(phone) {
-
       margin-bottom: 6rem;
     }
   }

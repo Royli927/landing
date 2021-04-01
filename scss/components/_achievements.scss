@@ -1,0 +1,16 @@
+.achievements-list {
+  @include flex();
+
+  flex-wrap: wrap;
+
+  &__item-description {
+    @include media-query(phone) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__item-title,
+  &__item-paragraph {
+    color: $white-color;
+  }
+}

@@ -1,6 +1,6 @@
 .section-about {
   padding-top: 12rem;
-  padding-bottom: $padding-height;
+  padding-bottom: $standard-padding-height;
 
   &__card {
     justify-content: center;
@@ -12,44 +12,33 @@
 }
 
 .section-achievements {
-  padding: $padding-height 0 $padding-height;
+  padding-top: $standard-padding-height;
+  padding-bottom: $standard-padding-height;
 
   background-color: $darken-blue-color;
 
-  .achievements-list {
-    @include flex();
+  &__card-item {
+    width: 12rem;
 
-    flex-wrap: wrap;
+    @include media-query(phone) {
+      flex-basis: 50%;
+      justify-content: center;
 
-    &__card-item {
-      width: 12rem;
-
-      @include media-query(phone) {
-        flex-basis: 50%;
-        justify-content: center;
-
-        &:not(:nth-child(-n+2)) {
-          margin-top: 9rem;
-        }
+      &:not(:nth-child(-n+2)) {
+        margin-top: 9rem;
       }
     }
+  }
 
-    &__card-item-title,
-    &__card-item-paragraph {
-      color: $white-color;
-    }
-
-    &__card-item-description {
-      @include media-query(phone) {
-        margin-left: 2rem;
-      }
-    }
+  @include media-query(phone) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .section-skills {
-  padding-top: $padding-height;
-  padding-bottom: $padding-height;
+  padding-top: $standard-padding-height;
+  padding-bottom: $standard-padding-height;
 
   &__card {
     flex-direction: row-reverse;
@@ -81,43 +70,12 @@
 
   &__card-skill-bar {
     height: .4rem;
-
-    background-color: $silver-color;
-  }
-
-  &__card-skill-bar-progress {
-    height: 100%;
-
-    border: none;
-
-    &_percent_25 {
-      width: 25%;
-    }
-
-    &_percent_50 {
-      width: 50%;
-    }
-
-    &_percent_75 {
-      width: 75%;
-    }
-
-    &_percent_100 {
-      width: 100%;
-    }
-
-    &_percent_25,
-    &_percent_50,
-    &_percent_75,
-    &_percent_100 {
-      background-color: $darken-blue-color;
-    }
   }
 }
 
 .section-work {
-  padding-top: $padding-height;
-  padding-bottom: $padding-height;
+  padding-top: $standard-padding-height;
+  padding-bottom: $standard-padding-height;
 
   background-color: $silver-color;
 
@@ -129,11 +87,26 @@
 
 .section-collage {
   padding: 2.8rem 0;
+
+  &__collage-box {
+    @include media-query(phone) {
+      max-height: 81rem;
+    }
+  }
+
+  &__item {
+    flex-basis: 25%;
+
+    @include media-query(phone) {
+      width: 50%;
+      height: 20rem;
+    }
+  }
 }
 
 .section-feedback {
-  padding-top: $padding-height;
-  padding-bottom: $padding-height;
+  padding-top: $standard-padding-height;
+  padding-bottom: $standard-padding-height;
 
   background-color: $silver-color;
 
