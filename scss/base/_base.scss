@@ -15,7 +15,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: $darken-white-color;
+  background-color: $white-color;
 }
 
 button {
@@ -26,17 +26,3 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-
-//picture {
-//  width: 100%;
-//}
-
-/*section,
-header,
-footer {
-  padding: 0 $padding-width;
-
-  @include media-query(phone) {
-    padding: 0 9%;
-  }
-}*/

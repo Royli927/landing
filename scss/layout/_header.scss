@@ -1,7 +1,7 @@
 .header {
   padding: 5.7rem 0 14.6rem;
 
-  background-color: $smoky-white-color;
+  background-color: $darken-white-color;
 
   &__container {
     width: 111.3rem;
@@ -51,6 +51,11 @@
     }
   }
 
+  &__picture-wrapper {
+    height: 90%;
+    width: 90%;
+  }
+
   &__card-title,
   &__card-paragraph {
     @include media-query(phone) {
@@ -81,8 +86,11 @@
 
   &__card-img {
     margin-right: 14.21rem;
+    margin-bottom: 4.23rem;
 
     @include media-query(phone) {
+      height: 100%;
+      width: 100%;
       margin-right: 0;
       margin-bottom: 5.1rem;
     }
