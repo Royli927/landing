@@ -337,6 +337,7 @@
 
     font-size: $content-font-size;
     line-height: $content-line-height;
+    letter-spacing: 0.15em;
   }
 
   @include media-query(phone) {
