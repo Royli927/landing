@@ -52,8 +52,10 @@
   }
 
   &__picture-wrapper {
-    height: 90%;
-    width: 90%;
+    @include media-query(phone) {
+      height: 90%;
+      width: 90%;
+    }
   }
 
   &__card-title,
