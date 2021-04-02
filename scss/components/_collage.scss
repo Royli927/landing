@@ -27,9 +27,4 @@
       width: 30%;
     }
   }
-
-  @include media-query(phone) {
-    flex-direction: column;
-    align-content: center;
-  }
 }

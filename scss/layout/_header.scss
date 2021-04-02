@@ -13,17 +13,26 @@
 
   &__top-bar {
     @include flex();
-
-    @include media-query(phone) {
-      margin-left: 1.9rem;
-    }
   }
 
   &__navigation {
-    width: 61.1rem;
+    margin-right: .8rem;
 
     @include media-query(phone) {
       display: none;
+    }
+  }
+
+  &__navigation-page {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.1em;
+
+    &:not(:last-child) {
+      margin-right: 4.2rem;
     }
   }
 
@@ -41,11 +50,9 @@
   }
 
   &__card {
-    width: 102.8rem;
-    margin-left: 8.5rem;
+    justify-content: flex-end;
 
     @include media-query(phone) {
-      max-width: 32.2rem;
       flex-direction: column;
       margin: 0 auto;
     }
@@ -63,13 +70,12 @@
 
     @include media-query(phone) {
       width: 100%;
-      max-width: 32.2rem;
+      padding-left: .8rem;
     }
   }
 
   &__card-btn {
     width: 22.5rem;
-    height: 6.5rem;
 
     @include media-query(phone) {
       margin: 0 auto;
@@ -77,16 +83,16 @@
   }
 
   &__card-img {
+    margin-right: 14.21rem;
+
     @include media-query(phone) {
-      height: 100%;
-      width: 100%;
+      margin-right: 0;
       margin-bottom: 5.1rem;
     }
   }
 
   @include media-query(phone) {
-    padding-top: 2.2rem;
-    padding-bottom: 9.5rem;
+    padding: 2.2rem 2.6rem 9.5rem 1.9rem;
 
     text-align: center;
   }
