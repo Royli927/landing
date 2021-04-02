@@ -1,12 +1,10 @@
 .collage-box {
-  @include flex(flex-start);
+  @include flex(flex-start, row);
 
-  flex-direction: row;
   flex-wrap: wrap;
 
   &__item {
     position: relative;
-    flex-grow: 1;
 
     &:hover .collage-box__item-icon,
     &:hover .overlay {

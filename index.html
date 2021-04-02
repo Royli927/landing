@@ -13,7 +13,7 @@
         <div class="container header__container">
             <div class="header__top-bar align-items-center">
                 <div class="logo-box">
-                    <img src="images/icon/logo-icon.svg" alt="Logo" class="logo-box__icon">
+                    <img src="images/icon/logo-icon.svg" alt="Logo" class="logo-box__icon header__logo-icon">
                 </div>
                 <nav class="navigation header__navigation">
                     <ul class="navigation__pages-list">
@@ -70,47 +70,47 @@
 
         <section class="section-achievements">
             <div class="container section-achievements__container">
-                <ul class="achievements-list">
+                <ul class="achievements-list section-achievements__achievements-container">
                     <li class="card section-achievements__card-item">
                         <img src="images/icon/project-achievement-icon.svg" alt="Projects achievement" class="card__img">
                         <div class="card__description achievements-list__item-description">
-                            <h3 class="title title_size_sm achievements-list__item-title">40+</h3>
-                            <p class="paragraph achievements-list__item-paragraph">проектов</p>
+                            <h3 class="title title_size_sm achievements-list__item-title section-achievements__item-title">40+</h3>
+                            <p class="paragraph achievements-list__item-paragraph section-achievements__item-paragraph">проектов</p>
                         </div>
                     </li>
                     <li class="card section-achievements__card-item">
                         <img src="images/icon/project-achievement-icon.svg" alt="Projects achievement" class="card__img">
                         <div class="card__description achievements-list__item-description">
-                            <h3 class="title title_size_sm achievements-list__item-title">40+</h3>
-                            <p class="paragraph achievements-list__item-paragraph">проектов</p>
+                            <h3 class="title title_size_sm achievements-list__item-title section-achievements__item-title">40+</h3>
+                            <p class="paragraph achievements-list__item-paragraph section-achievements__item-paragraph">проектов</p>
                         </div>
                     </li>
                     <li class="card section-achievements__card-item">
                         <img src="images/icon/project-achievement-icon.svg" alt="Projects achievement" class="card__img">
                         <div class="card__description achievements-list__item-description">
-                            <h3 class="title title_size_sm achievements-list__item-title">40+</h3>
-                            <p class="paragraph achievements-list__item-paragraph">проектов</p>
+                            <h3 class="title title_size_sm achievements-list__item-title section-achievements__item-title">40+</h3>
+                            <p class="paragraph achievements-list__item-paragraph section-achievements__item-paragraph">проектов</p>
                         </div>
                     </li>
                     <li class="card section-achievements__card-item">
                         <img src="images/icon/project-achievement-icon.svg" alt="Projects achievement" class="card__img">
                         <div class="card__description achievements-list__item-description">
-                            <h3 class="title title_size_sm achievements-list__item-title">40+</h3>
-                            <p class="paragraph achievements-list__item-paragraph">проектов</p>
+                            <h3 class="title title_size_sm achievements-list__item-title section-achievements__item-title">40+</h3>
+                            <p class="paragraph achievements-list__item-paragraph section-achievements__item-paragraph">проектов</p>
                         </div>
                     </li>
                     <li class="card section-achievements__card-item">
                         <img src="images/icon/project-achievement-icon.svg" alt="Projects achievement" class="card__img">
                         <div class="card__description achievements-list__item-description">
-                            <h3 class="title title_size_sm achievements-list__item-title">40+</h3>
-                            <p class="paragraph achievements-list__item-paragraph">проектов</p>
+                            <h3 class="title title_size_sm achievements-list__item-title section-achievements__item-title">40+</h3>
+                            <p class="paragraph achievements-list__item-paragraph section-achievements__item-paragraph">проектов</p>
                         </div>
                     </li>
                     <li class="card section-achievements__card-item">
                         <img src="images/icon/project-achievement-icon.svg" alt="Projects achievement" class="card__img">
                         <div class="card__description achievements-list__item-description">
-                            <h3 class="title title_size_sm achievements-list__item-title">40+</h3>
-                            <p class="paragraph achievements-list__item-paragraph">проектов</p>
+                            <h3 class="title title_size_sm achievements-list__item-title section-achievements__item-title">40+</h3>
+                            <p class="paragraph achievements-list__item-paragraph section-achievements__item-paragraph">проектов</p>
                         </div>
                     </li>
                 </ul>
@@ -120,11 +120,13 @@
         <section class="section-skills">
             <div class="container section-skills__container">
                 <div class="card section-skills__card">
-                    <picture>
-                        <source media="(max-width: 1279px)" srcset="images/skills/portrait-img-0.5x.png">
-                        <source media="(min-width: 1280px)" srcset="images/skills/portrait-img-1x.png">
-                        <img src="images/skills/portrait-img-1x.png" alt="Portrait image" class="card__img section-skills__card-img">
-                    </picture>
+                    <div class="section-skills__picture-wrapper">
+                        <picture>
+                            <source media="(max-width: 1279px)" srcset="images/skills/portrait-img-0.5x.png">
+                            <source media="(min-width: 1280px)" srcset="images/skills/portrait-img-1x.png">
+                            <img src="images/skills/portrait-img-1x.png" alt="Portrait image" class="card__img section-skills__card-img">
+                        </picture>
+                    </div>
                     <div class="card__description section-skills__card-description">
                         <h2 class="title title_size_md margin-bottom-md section-skills__card-title">Мои навыки</h2>
                         <div class="section-skills__card-skill">
@@ -159,11 +161,11 @@
                             Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                         </p>
                     </div>
-                    <div class="video-box">
+                    <div class="video-box section-work__video-box">
                         <picture>
                             <source media="(max-width: 1279px)" srcset="images/work/work-video-preview-img-1x.png">
                             <source media="(min-width: 1280px)" srcset="images/work/work-video-preview-img-2x.png">
-                            <img src="images/work/work-video-preview-img-2x.png" alt="Video preview" class="video-box__preview">
+                            <img src="images/work/work-video-preview-img-2x.png" alt="Video preview" class="video-box__preview section-work__video-box-preview">
                         </picture>
                         <div class="overlay">
                             <img src="images/icon/play-button-icon.svg" alt="Play button icon" class="video-box__icon section-work__video-box-icon">
@@ -288,7 +290,7 @@
                                 </div>
                             </div>
                         </form>
-                        <button class="btn section-feedback__btn">Отправить</button>
+                        <button class="btn section-feedback__form-btn">Отправить</button>
                     </div>
                 </div>
             </div>
