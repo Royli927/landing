@@ -15,7 +15,6 @@
     @include flex();
 
     @include media-query(phone) {
-      width: 19.3rem;
       flex-direction: column;
       margin: 0 auto;
 
@@ -30,11 +29,21 @@
   }
 
   &__social-networks {
-    height: 4rem;
-    width: 17.5rem;
+    @include media-query(phone) {
+      padding-left: 1rem;
+      padding-right: .8rem;
+    }
+  }
+
+  &__social-networks-link {
+    &:not(:last-child) {
+      margin-right: 2.187rem;
+    }
   }
 
   @include media-query(phone) {
+    padding-left: 9rem;
+    padding-right: 9.2rem;
     padding-bottom: 3.9rem;
   }
 }
