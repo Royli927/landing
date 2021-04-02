@@ -24,13 +24,6 @@
   }
 
   &__navigation-page {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    letter-spacing: 0.1em;
-
     &:not(:last-child) {
       margin-right: 4.2rem;
     }
@@ -65,12 +58,15 @@
     }
   }
 
+  &__card-paragraph {
+    padding-left: .8rem;
+  }
+
   &__card-description {
     width: 54rem;
 
     @include media-query(phone) {
       width: 100%;
-      padding-left: .8rem;
     }
   }
 
