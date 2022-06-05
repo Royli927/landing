@@ -1,33 +1,85 @@
 .header {
-  height: 100vh;
-  padding-top: 5.5rem;
-  padding-bottom: 14.6rem;
+  padding: 5.7rem 0 14.6rem;
 
-  background-color: $smoky-white-color;
+  background-color: $darken-white-color;
+
+  &__container {
+    width: 111.3rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
 
   &__top-bar {
     @include flex();
   }
 
   &__navigation {
-    width: 53%;
+    margin-right: .8rem;
+
+    @include media-query(phone) {
+      display: none;
+    }
+  }
+
+  &__navigation-page {
+    &:not(:last-child) {
+      margin-right: 4.2rem;
+    }
+  }
+
+  &__logo-icon {
+    height: 6rem;
+    width: 9.6rem;
   }
 
   &__main-content {
     padding-top: 14rem;
+
+    @include media-query(phone) {
+      padding-top: 6.7rem;
+    }
   }
 
   &__card {
-    padding-left: 7rem;
+    justify-content: flex-end;
 
     @include media-query(phone) {
       flex-direction: column;
-      padding-left: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__picture-wrapper {
+    @include media-query(phone) {
+      height: 90%;
+      width: 90%;
+    }
+  }
+
+  &__card-title,
+  &__card-paragraph {
+    @include media-query(phone) {
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__card-paragraph {
+    padding-left: .8rem;
+  }
+
+  &__card-description {
+    width: 54rem;
+
+    @include media-query(phone) {
+      width: 100%;
     }
   }
 
   &__card-btn {
     width: 22.5rem;
+    letter-spacing: 0.1em;
 
     @include media-query(phone) {
       margin: 0 auto;
@@ -35,13 +87,19 @@
   }
 
   &__card-img {
+    margin-right: 13.1rem;
+    margin-bottom: 4.23rem;
+
     @include media-query(phone) {
-      margin-bottom: 6rem;
+      height: 100%;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5.1rem;
     }
   }
 
   @include media-query(phone) {
-    height: auto;
+    padding: 2.2rem 2.6rem 9.5rem 1.9rem;
 
     text-align: center;
   }

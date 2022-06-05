@@ -5,31 +5,32 @@
 
   &__input,
   &__textarea {
-    width: 100%;
-    padding: 1.8rem 0 1.8rem 2rem;
+    padding: 1.7rem 0 1.8rem 2rem;
 
     border: none;
 
     background-color: $white-color;
 
     &:focus + .form__label,
-    &:valid + .form__label{
+    &:valid + .form__label {
       transform: translateY(-4rem);
-      color: $darken-blue-color
+      color: $darken-blue-color;
+
+      @include media-query(phone) {
+        transform: translateY(-3.6rem);
+      }
     }
   }
 
   &__textarea {
     resize: none;
-    min-height: 17.5rem;
   }
 
   &__label {
-    @include text($black-color);
+    @include text($gray-concrete, $content-font-size, $content-line-height);
 
     position: absolute;
-    top: 1.2rem;
+    top: 1.7rem;
     left: 2rem;
-    z-index: 100;
   }
 }

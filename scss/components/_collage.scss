@@ -1,5 +1,5 @@
 .collage-box {
-  @include flex(flex-start);
+  @include flex(flex-start, row);
 
   flex-wrap: wrap;
 
@@ -26,9 +26,5 @@
       height: 30%;
       width: 30%;
     }
-  }
-
-  @include media-query(phone) {
-    flex-direction: column;
   }
 }

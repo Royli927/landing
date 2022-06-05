@@ -11,15 +11,11 @@
 
 html {
   font-size: 62.5%;
-
-  @include media-query(phone) {
-    font-size: 40%;
-  }
 }
 
 body {
   box-sizing: border-box;
-  background-color: $darken-white-color;
+  background-color: $white-color;
 }
 
 button {
@@ -29,14 +25,4 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-}
-
-section,
-header,
-footer {
-  padding: 0 $padding-width;
-
-  @include media-query(phone) {
-    padding: 0 9%;
-  }
 }

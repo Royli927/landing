@@ -1,44 +1,106 @@
 .section-about {
-  padding-top: 12rem;
-  padding-bottom: $standard-padding-height;
+  padding: 11.9rem 0 $standard-padding-height;
+
+  &__container {
+    width: 54rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
 
   &__card {
     justify-content: center;
   }
 
-  &__card-description {
-    width: 52rem;
-  }
-}
-
-.section-achievements {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
-
-  background-color: $darken-blue-color;
-
-  &__card-item {
-    width: 12rem;
-
+  &__card-title {
     @include media-query(phone) {
-      flex-basis: 50%;
-      justify-content: center;
-
-      &:not(:nth-child(-n+2)) {
-        margin-top: 9rem;
-      }
+      margin-bottom: 4.2rem;
     }
   }
 
   @include media-query(phone) {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 9.1rem 2.6rem 8.2rem;
+  }
+}
+
+.section-achievements {
+  padding: $standard-padding-height 0;
+
+  background-color: $darken-blue-color;
+
+  &__container {
+    width: 109.1rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
+
+  &__achievements-container {
+    @include media-query(phone) {
+      margin: 0 auto;
+    }
+  }
+
+  &__flex-container {
+    @include flex();
+
+    @include media-query(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__card-item {
+    height: 5rem;
+    width: 14.1rem;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 4.9rem;
+    }
+
+    @include media-query(phone) {
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-bottom: 8.9rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__item-title {
+    display: block;
+    width: 3.6rem;
+    height: 1.9rem;
+    margin-bottom: 1rem;
+  }
+
+  &__item-paragraph {
+    display: block;
+    width: 7.1rem;
+    height: 1.5rem;
+  }
+
+  @include media-query(phone) {
+    padding: 7.5rem 1.9rem 7.4rem 1.8rem;
   }
 }
 
 .section-skills {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: 10.2rem 0 10.1rem;
+
+  &__container {
+    width: 115rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
 
   &__card {
     flex-direction: row-reverse;
@@ -48,77 +110,185 @@
     }
   }
 
+  &__picture-wrapper {
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
+
   &__card-img {
     @include media-query(phone) {
+      height: 100%;
+      width: 100%;
       margin-bottom: 9.8rem;
     }
   }
 
   &__card-title {
     @include media-query(phone) {
+      margin-bottom: 4.2rem;
       text-align: center;
     }
   }
 
+  &__card-paragraph {
+    margin-bottom: 1.988rem;
+
+    @include media-query(phone) {
+      margin-bottom: 1.997rem;
+    }
+  }
+
   &__card-description {
-    width: 35%;
+    width: 44.5rem;
 
     @include media-query(phone) {
       width: 100%;
     }
   }
 
+  &__card-skill {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
   &__card-skill-bar {
     height: .4rem;
+  }
+
+  &__card-skill-progress {
+    width: 34.936rem;
+
+    @include media-query(phone) {
+      width: 78%;
+    }
+  }
+
+  @include media-query(phone) {
+    padding: 8.2rem 1.8rem 10.3rem;
   }
 }
 
 .section-work {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: $standard-padding-height 0;
 
-  background-color: $silver-color;
+  background-color: $darken-white-color;
+
+  &__container {
+    width: 111rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
 
   &__card {
     flex-direction: column;
     justify-content: center;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
+
+  &__card-title {
+    @include media-query(phone) {
+      margin-bottom: 3.4rem;
+    }
+  }
+
+  &__card-paragraph {
+    @include media-query(phone) {
+      padding: 0 .8rem;
+    }
+  }
+
+  &__card-description {
+    width: 54rem;
+    margin-bottom: 5.7rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
+
+  &__video-box {
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
+
+  &__video-box-preview {
+    @include media-query(phone) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__video-box-icon {
+    @include media-query(phone) {
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+  }
+
+  @include media-query(phone) {
+    padding: 9.3rem 1.8rem 9.1rem;
   }
 }
 
 .section-collage {
   padding: 2.8rem 0;
 
-  &__collage-box {
+  &__item {
+    flex-basis: calc(100% / #{$collage-items-qty});
+
     @include media-query(phone) {
-      max-height: 81rem;
+      flex-basis: calc(100% / 2);
     }
   }
 
-  &__item {
-    flex-basis: 25%;
-
-    @include media-query(phone) {
-      width: 50%;
-      height: 20rem;
-    }
+  @include media-query(phone) {
+    padding: 3.4rem 0;
   }
 }
 
 .section-feedback {
-  padding-top: $standard-padding-height;
-  padding-bottom: $standard-padding-height;
+  padding: $standard-padding-height 0;
 
-  background-color: $silver-color;
+  background-color: $darken-white-color;
+
+  &__container {
+    width: 54rem;
+
+    @include media-query(phone) {
+      width: 100%;
+    }
+  }
 
   &__card {
     flex-direction: column;
   }
 
-  &__card-description {
-    width: 54rem;
+  &__card-title {
+    @include media-query(phone) {
+      margin-bottom: 3.4rem;
+    }
+  }
+
+  &__card-paragraph {
+    margin-bottom: 6.5rem;
 
     @include media-query(phone) {
-      width: auto;
+      margin-bottom: 4.8rem;
+      padding: 0 .9rem 0 1.1rem;
+    }
+  }
+
+  &__form {
+    @include media-query(phone) {
+      margin-bottom: 4.8rem;
     }
   }
 
@@ -126,13 +296,14 @@
     @include flex();
 
     @include media-query(phone) {
+      margin-bottom: 2.1rem;
       flex-direction: column;
     }
 
     > .section-feedback__form-group {
       @include media-query(phone) {
         &:not(:last-child) {
-          margin-bottom: 5rem;
+          margin-bottom: 2.2rem;
         }
       }
     }
@@ -140,14 +311,36 @@
 
   &__form-input {
     width: 25rem;
+  }
 
+  &__form-label {
+    width: 7.4rem;
+  }
+
+  &__form-textarea {
+    height: 17.5rem;
+    width: 54rem;
+  }
+
+  &__form-input,
+  &__form-textarea {
     @include media-query(phone) {
       width: 100%;
     }
   }
 
-  &__btn {
+  &__form-btn {
+    display: block;
     width: 19rem;
     margin: 0 auto;
+    padding: 2rem 1.9rem;
+
+    font-size: $content-font-size;
+    line-height: $content-line-height;
+    letter-spacing: 0.15em;
+  }
+
+  @include media-query(phone) {
+    padding: 9.1rem 1.7rem 10rem 1.6rem;
   }
 }
